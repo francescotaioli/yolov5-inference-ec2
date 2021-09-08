@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    return "<h1>Call /predict endpoint. I.e curl -w '\n' -F image=@helmet.jpg http://127.0.0.1:5000/predict</h1>"
+    return "<h1>Call /predict endpoint. I.e curl -w '\n' -F image=@helmet.jpg [base_url]/predict</h1>"
 
 
 @app.route('/predict', methods=['POST'])
