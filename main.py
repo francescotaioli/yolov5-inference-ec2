@@ -43,9 +43,9 @@ def create_json_response(bounding_boxes):
 
 def generate_random_seq(length=5):
     seq = random.sample(range(10, 30), length)
-    return str(seq)
+    seq_as_str = [str(i) for i in seq]
+    return ''.join(seq_as_str)
 
 
 if __name__ == "__main__":
-    app.debug = True
     app.run(host='0.0.0.0')
