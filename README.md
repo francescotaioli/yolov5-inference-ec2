@@ -1,7 +1,7 @@
 # Yolov5 trained on nlf helmet detection - inference on ec2
 
 ## installation (on ec2 console)
-- pull this repository
+- clone this repository
 - create conda env
 - in the root folder, execute ```pip install -r requirements.txt```
 - in the root folder, execute ```gunicorn --bind=0.0.0.0:8080 server:app```
